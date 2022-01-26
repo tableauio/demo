@@ -1,0 +1,3 @@
+[submodule "third_party/tableau"]
+	path = third_party/tableau
+	url = https://github.com/wenchy/tableau.git
