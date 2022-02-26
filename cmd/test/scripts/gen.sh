@@ -6,21 +6,21 @@ set -o pipefail
 
 cd "$(git rev-parse --show-toplevel)"
 
-TABLEAU_PROTO_DIR="./third_party/tableau/proto"
-IN_DIR="./cmd/test/protoconf"
-OUT_DIR="./cmd/test/testpb"
+TABLEAU_PROTO_DIR="./third_party/"
+INDIR="./cmd/test/protoconf"
+OUTDIR="./cmd/test/testpb"
 
-# remove OUT_DIR
-rm -rfv $OUT_DIR
-mkdir -p $OUT_DIR
+# remove OUTDIR
+rm -rfv $OUTDIR
+mkdir -p $OUTDIR
 
-for item in "$IN_DIR"/* ; do
+for item in "$INDIR"/* ; do
     echo "$item"
     if [ -f "$item" ]; then
         protoc \
-        --go_out="$OUT_DIR" \
+        --go_out="$OUTDIR" \
         --go_opt=paths=source_relative \
-        --proto_path="$IN_DIR" \
+        --proto_path="$INDIR" \
         --proto_path="$TABLEAU_PROTO_DIR" \
         "$item"
     fi

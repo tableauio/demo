@@ -122,10 +122,10 @@ message MailConf {
     datarow: 2
   };
 
-  map<int32, Row> mail_map = 1;  // default: [(tableau.field).key = "Key"];
+  map<int32, Row> mail_map = 1[(tableau.field).key = "Key"];
 
   message Row {
-    int32 key = 1;
+    int32 key = 1 [(tableau.field).name = "Key"];
     string title = 2;
     string content = 3;
     repeated Item item_list = 4;  // default: [(tableau.field).name = "Item"];

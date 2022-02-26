@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/Wenchy/tableau"
-	_ "github.com/Wenchy/tableau/cmd/test/testpb"
-	"github.com/Wenchy/tableau/options"
+	_ "github.com/tableauio/demo/cmd/test/testpb"
+	"github.com/tableauio/tableau"
+	"github.com/tableauio/tableau/options"
 )
 
 func main() {
-	tableau.Xlsx2Conf(
+	tableau.Excel2Conf(
 		"test",
 		"./testdata/",
 		"./_output/json/",

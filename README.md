@@ -16,14 +16,9 @@ Refer: [protoc-gen-go](https://github.com/protocolbuffers/protobuf-go)
 ```
 go install google.golang.org/protobuf/cmd/protoc-gen-go
 ```
-
-### Init Git Submodules
-
-Run `git submodule update --init --recursive`
-
 ## Run
 
-- `go mod tidy`
 - `cd cmd/test`
+- `bash scripts/gen.sh`
 - `go build`
 - `./test`

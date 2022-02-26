@@ -3,13 +3,15 @@ module github.com/tableauio/demo
 go 1.17
 
 require (
-	github.com/Wenchy/tableau v0.7.4
-	github.com/golang/protobuf v1.5.2
+	github.com/tableauio/tableau v0.9.4
 	google.golang.org/protobuf v1.27.1
 )
 
 require (
+	github.com/antchfx/xmlquery v1.3.8 // indirect
+	github.com/antchfx/xpath v1.2.0 // indirect
 	github.com/emirpasic/gods v1.12.0 // indirect
+	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
