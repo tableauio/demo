@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	tableau.Excel2Conf(
+	tableau.GenConf(
 		"test",
 		"./testdata/",
 		"./_output/json/",

@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	tableau.Excel2Proto(
+	tableau.GenProto(
 		"protoconf",
 		"github.com/tableauio/demo/examples/helloworld/protoconf",
 		"../testdata",
